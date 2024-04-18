@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio Rizki Zaky</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6088842eb8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleLink() {
+        var iframe = document.getElementById("iframe_project");
+        var link = document.getElementById("toggleLink");
+
+        if (link.innerText === "See more") {
+          link.innerText = "Close";
+          link.href = "pages/project2.html";
+        } else {
+          link.innerText = "See more";
+          link.href = "pages/project1.html";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="image/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Skills</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>College Student</p>
+          <h1>
+            Hi, I'm Muhamad <span> Rizki Zaky</span><br />
+            Azzahran studied at Pamulang University
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="image/foto-about.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a student currently studying at Pamulang University majoring
+              in Informatics Engineering. I am currently in Semester 6.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education, Courses, and Training</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Video Editing</span><br />Build a Story, Combine Scenes
+                  or Video Shots, Trimming, Processing sound.
+                </li>
+                <li>
+                  <span>Screenwriter</span><br />Determine the theme, Develop a
+                  plot or story line, Composed the entire film script.
+                </li>
+                <li>
+                  <span>Web Development</span><br />
+                  <ul class="aboutList">  
+                    <li>Built and developed websites on 
+                    the client side.</li>
+                    <li><span>Utilizing tools such as GIT, HTML, CSS, Bootstrap, 
+                      Tailwind, React JS, Express JS, MySQL, and PHP.</span></li>
+                  </ul>    
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2024</span><br>
+                  <ul class="txt2">
+                    <li>HariSenin.com - Full-Stack Web Development Bootcamp.</li>
+                    <li><span>Relevant Course works: SDLC, GIT, HTML, CSS, Tailwind, JavaScript, React JS, MySQL, and Node.js.</span></li>
+                  </ul>
+                </li>
+                <li><span>2022</span><br />BuildWithAngga - Basic Web Designer Course.</li>
+                <li><span>2021 - Present</span><br />Universitas Pamulang - Informatics Engineering.</li>
+                <li><span>Graduated 2018</span><br />SMK Muhammadiyah 9 Jakarta - Multimedia.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------services---------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Tools and <span>Technology</span></h1>
+        <div class="services-list">
+                <div class="services-list-logo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="50"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 512.013 512.013"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        fill="#00005b"
+                        d="M90.669 6.4h330.675c50.135 0 90.669 40.534 90.669 90.669v317.875c0 50.135-40.534 90.669-90.669 90.669H90.669C40.534 505.613 0 465.078 0 414.944V97.069C0 46.934 40.534 6.4 90.669 6.4z"
+                        opacity="1"
+                        data-original="#00005b"
+                        class=""
+                      ></path>
+                      <g fill="#99f">
+                        <path
+                          d="M189.872 133.337c17.493 0 32 2.133 43.947 6.613 20.062 7.523 36.561 21.389 44.162 41.815 3.2 8.96 4.907 18.134 4.907 27.734 0 31.455-16.596 60.188-47.148 71.469-14.507 5.333-30.507 7.253-48.001 7.253-5.12 0-8.534 0-10.667-.213s-5.12-.213-9.173-.213v68.482c.213 1.493-.853 2.773-2.347 2.987h-41.387c-1.707 0-2.56-.853-2.56-2.773V136.963c0-1.493.64-2.347 2.133-2.347 3.627 0 7.04 0 11.947-.213zm-21.761 42.454v71.682c2.987.213 5.76.427 8.32.427h11.307c8.32 0 16.64-1.28 24.533-3.84 15.278-4.955 24.108-17.385 24.108-33.28 0-13.313-7.037-26.292-19.84-31.148-7.893-3.2-16.427-4.48-25.174-4.267-5.547 0-10.454 0-14.507.213-4.267-.214-7.254 0-8.747.213zM312.755 188.165h37.334c2.133 0 3.84 1.493 4.48 3.413a21.649 21.649 0 0 1 1.28 5.333c.427 2.133.853 4.48 1.067 6.613.213 2.347.427 4.907.427 7.68a79.385 79.385 0 0 1 22.827-18.347c9.814-5.547 21.121-8.32 32.428-8.32 1.493-.213 2.773.853 2.987 2.347v42.454c0 1.707-1.067 2.347-3.413 2.347-7.68-.213-15.574.427-23.041 2.133a87.812 87.812 0 0 0-17.921 5.76c-4.053 1.92-7.893 4.48-10.88 7.893v108.803c0 2.133-.853 2.987-2.773 2.987h-42.028c-1.707.213-3.2-.853-3.413-2.56V237.658c0-5.12 0-10.454-.213-16-.213-5.547-.213-11.094-.427-16.64 0-4.907-.427-9.6-.853-14.507-.213-1.067.427-2.133 1.493-2.347-.001-.213.425-.213.639.001z"
+                          fill="#9999ff"
+                          opacity="1"
+                          data-original="#9999ff"
+                          class=""
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                  <h2>Adobe Premiere</h2>
+                </div>
+                <div class="services-list-logo">
+                  <img src="image/final-draft-12-logo.png" width="50" />
+                  <h2>Final Draft</h2>
+                </div>
+                <div class="services-list-logo">
+                  <img src="img-logos/git.svg" width="60" alt="Git">
+                  <h2>GIT</h2>
+                </div>
+                <div class="services-list-logo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="50"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        d="M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2zM206 23h-20.3V0h63.7v23H229v46h-23zm53.5-23h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8-16.1-24.8V69h-22.6zm89.2 0h23v46.2h32.6V69h-55.6z"
+                        fill="#000000"
+                        opacity="1"
+                        data-original="#000000"
+                        class=""
+                      ></path>
+                      <path
+                        fill="#ff4c1e"
+                        d="m107.6 471-33-370.4h362.8l-33 370.2L255.7 512"
+                        opacity="1"
+                        data-original="#ff4c1e"
+                        class=""
+                      ></path>
+                      <path
+                        fill="#ff651e"
+                        d="M256 480.5V131h148.3L376 447z"
+                        opacity="1"
+                        data-original="#ff651e"
+                        class=""
+                      ></path>
+                      <path
+                        fill="#ebebeb"
+                        d="M142 176.3h114l16.951 22.7L256 221.7h-64.2l4.2 46.5h60l16.951 23.549L256 313.5H154.4zm14.4 160H202l3.2 36.3 50.8 13.6 19.127 22.66L256 433.6l-93.2-26z"
+                        opacity="1"
+                        data-original="#ebebeb"
+                        class=""
+                      ></path>
+                      <path
+                        fill="#ffffff"
+                        d="M369.6 176.3H255.8v45.4h109.6zm-8.3 91.9H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8z"
+                        opacity="1"
+                        data-original="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h2>HTML 5</h2>
+                </div>
+                <div class="services-list-logo">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="50"
+                    x="0"
+                    y="0"
+                    viewBox="0 0 512 512"
+                    style="enable-background: new 0 0 512 512"
+                    xml:space="preserve"
+                    class=""
+                  >
+                    <g>
+                      <path
+                        fill="#004ce8"
+                        d="m437.367 100.62-33.046 370.199L255.778 512l-148.134-41.123L74.633 100.62z"
+                        opacity="1"
+                        data-original="#004ce8"
+                        class=""
+                      ></path>
+                      <path
+                        fill="#0065f4"
+                        d="m376.03 447.246 28.24-316.352H256v349.629z"
+                        opacity="1"
+                        data-original="#0065f4"
+                      ></path>
+                      <g fill="#ebebeb">
+                        <path
+                          d="m150.31 268.217 4.07 45.41H256l19.533-22.705L256 268.217zM256 176.305H142.132l4.128 45.411H256l19.533-22.706zM256 433.399l19.533-24.081L256 386.153l-.199.053-50.574-13.656-3.233-36.217h-45.585l6.362 71.301 93.02 25.823z"
+                          fill="#ebebeb"
+                          opacity="1"
+                          data-original="#ebebeb"
+                          class=""
+                        ></path>
+                      </g>
+                      <path
+                        d="M160 0h55v23h-32v23h32v23h-55zM226 0h55v20h-32v4h32v46h-55V49h32v-4h-32zM292 0h55v20h-32v4h32v46h-55V49h32v-4h-32z"
+                        fill="#000000"
+                        opacity="1"
+                        data-original="#000000"
+                      ></path>
+                      <path
+                        fill="#ffffff"
+                        d="m311.761 313.627-5.271 58.894-50.647 13.67v47.244l93.094-25.801.683-7.672 10.671-119.551 1.108-12.194 8.198-91.912H255.843v45.411h63.988l-4.132 46.501h-59.856v45.41z"
+                        opacity="1"
+                        data-original="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                  <h2>CSS 3</h2>
+                </div>
+                <div class="services-list-logo">
+                  <img src="img-logos/tailwind-css.svg" width="50" alt="Tailwind">
+                  <h2>Tailwind</h2>
+                </div>
+                <div class="services-list-logo">
+                  <img src="img-logos/bootstrap.svg" width="50" alt="Bootstrap">
+                  <h2>Bootstrap</h2>
+                </div>
+                <div class="services-list-logo">
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+                    width="50"
+                    alt="Js free icon"
+                    title="Js free icon"
+                  />
+                  <h2>JavaScript</h2>
+                </div>
+                <div class="services-list-logo">
+                  <img src="img-logos/react-js.svg" width="50" alt="react-js">
+                  <h2>React JS</h2>
+                </div>
+                <div class="services-list-logo">
+                  <img src="img-logos/express-jsBG.svg" width="50" alt="express-js">
+                  <h2>Express JS</h2>
+                </div>
+                <div class="services-list-logo">
+                  <img src="img-logos/mysql.svg" width="50" alt="MySQL">
+                  <h2>MqSQL</h2>
+                </div>
+                <div class="services-list-logo">
+                  <img src="img-logos/figma.svg" width="50" alt="Figma">
+                  <h2>Figma</h2>
+                </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------projects------------ -->
+    <iframe
+      id="portfolio"
+      id="iframe_project"
+      style="border: none"
+      src="pages/project1.html"
+      name="iframe_project"
+      height="580px"
+      width="100%"
+      title="Iframe Project"
+    ></iframe>
+    <a
+      id="toggleLink"
+      href="pages/project2.html"
+      target="iframe_project"
+      class="btn"
+      onclick="toggleLink()"
+      >See more</a
+    >
+    <!-- ----------contact------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> rizki.zaky10@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i> 08979365947</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/rez_zaky/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/rizki-zaky/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="#" download class="btn btn2 btn1"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2 btn1">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © Muhamad Rizki Zaky Azzahran
+          <i class="fas fa-heart"></i>
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
